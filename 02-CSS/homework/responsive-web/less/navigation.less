@@ -1,0 +1,35 @@
+// Código de Nav acá
+nav {
+  .flex(column, center, center);
+  background-color: @nav-bg;
+  position: fixed;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 4px @shuttle-gray;
+
+  h1 {
+    font-size: 3.2rem;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  div{
+    padding-bottom: 8px;
+
+    a {
+      font-size: 1.8rem;
+      margin-left: 8px;
+      margin-right: 8px;
+      text-decoration: none;
+      color: @nav-font;
+    }
+  }
+}
+@media @phone{
+  nav {
+    div {
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
